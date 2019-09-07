@@ -1,12 +1,14 @@
 package app;
 
-import app.users.*;
-// import app.vehicles.*;
+import app.installations.Airport;
+import app.installations.Installation;
+import app.vehicles.Airplane;
+import app.vehicles.Vehicle;
 
 public class App {
     public static void main(String[] args) {
-        User user = new Client("JD123", "123", "Daniel", "Velásquez", "454598");
-        // Vehicle vehicle = new Bus();
-        System.out.println(user);
+        Vehicle airplane = new Airplane();
+        Installation airport = new Airport("Hangar1", "Hangar", airplane);
+        System.out.println(airport);
     }
 }

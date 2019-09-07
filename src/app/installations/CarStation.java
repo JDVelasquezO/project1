@@ -3,9 +3,9 @@ package app.installations;
 /**
  * CarStation
  */
-public class CarStation extends Installation {
+// public class CarStation extends Installation {
 
-    public CarStation(int id) {
-        super(id);
-    }
-}
+//     // public CarStation(int id) {
+//     //     super(id);
+//     // }
+// }

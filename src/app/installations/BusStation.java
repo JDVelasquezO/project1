@@ -3,9 +3,9 @@ package app.installations;
 /**
  * BusStation
  */
-public class BusStation extends Installation {
+// public class BusStation extends Installation {
 
-    public BusStation(int id){
-        super(id);
-    }
-}
+//     // public BusStation(int id){
+//     //     super(id);
+//     // }
+// }
