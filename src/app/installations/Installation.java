@@ -10,7 +10,7 @@ public abstract class Installation {
     //private int id;
     private String name;
     private String type;
-    private Vehicle parkingLot;
+    private Vehicle vehicle;
 
     public Installation(String name, String type, Vehicle vehicle){
         setType(type);
@@ -18,15 +18,18 @@ public abstract class Installation {
 
     public void setName(String name) { this.name = name; }
     public void setType(String type) { this.type = type; }
-    public void setParkingLot(Vehicle parkingLot)
-    { this.parkingLot = parkingLot; }
+    public void setParkingLot(Vehicle vehicle)
+    { this.vehicle = vehicle; }
 
     public String getName() { return name; }
-    public Vehicle getParkingLot() { return parkingLot; }
+    public Vehicle getParkingLot() { return vehicle; }
     public String getType() { return type; }
+    public String getVehicle(){
+        return "\n" + vehicle;
+    }
 
     @Override
     public String toString() {
-        return "Se creo un " + type;
+        return "Se creo un " + type + "\n" + getVehicle();
     }
 }
