@@ -6,8 +6,8 @@ package app.vehicles;
 public abstract class Vehicle {
 
     private int id;
-    private double tankCapacity;
     private int passengerCapacity;
+    private double tankCapacity;
     private double limits;
     private double milage;
     private String mark;
@@ -42,6 +42,6 @@ public abstract class Vehicle {
 
     @Override
     public String toString() {
-        return "El auto tiene capaidad de " + passengerCapacity + " personas";
+        return "El auto tiene capaidad de " + tankCapacity+ " galones";
     }
 }
