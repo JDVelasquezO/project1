@@ -5,15 +5,19 @@ import app.vehicles.Vehicle;
 /**
  * Installation
  */
-public abstract class Installation {
+public class Installation {
 
     //private int id;
     private String name;
     private String type;
     private Vehicle vehicle;
 
-    public Installation(String name, String type, Vehicle vehicle){
-        setType(type);
+    public Installation(String name, String type){
+        setType(type); setName(name);
+    }
+
+    public Installation() {
+        this("null", "null");
     }
 
     public void setName(String name) { this.name = name; }
@@ -30,6 +34,6 @@ public abstract class Installation {
 
     @Override
     public String toString() {
-        return "Se creo un " + type + "\n" + getVehicle();
+        return "El " + type + " " + name + " fue creada satisfactoriamente";
     }
 }

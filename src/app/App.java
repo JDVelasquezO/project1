@@ -1,17 +1,22 @@
 package app;
 
-import app.vehicles.Airplane;
-import app.vehicles.Vehicle;
+import app.country.Country;
+import app.country.Location;
+import app.installations.Installation;
 
 public class App {
     public static void main(String[] args) {
-        Vehicle[] vehicle = new Vehicle[2];
+        
+        Installation installation = new Installation("Denver", "Aeropuerto");
+        Installation installation2 = new Installation("Car", "Estacionamiento");
+        
+        Location location = new Location(2);
+        location.addInstallation(installation);
+        location.addInstallation(installation2);
 
-        vehicle[0] = new Airplane(15, 250.0, 1500.25, 4500, "Boeing747", 45600.0);
-        vehicle[1] = new Airplane(20, 255.0, 1530.25, 5000, "Boeing777", 45500.0);
+        Country country = new Country(2, "Guatemala");
+        country.addLocations(location);
 
-        for (Vehicle v: vehicle){
-            System.out.println(v);
-        }
+        System.out.println(country);
     }
 }
