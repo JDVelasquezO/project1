@@ -1,5 +1,6 @@
 package app.country;
 
+import app.installations.Airport;
 import app.installations.Installation;
 
 /**
@@ -15,7 +16,7 @@ public class Location {
         setCode(code);
         this.instalations = new Installation[index];
         for (int i = 0; i < instalations.length; i++) {
-            this.instalations[i] = new Installation();
+            this.instalations[i] = new Airport();
         }
     }
 

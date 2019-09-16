@@ -5,9 +5,9 @@ import app.vehicles.Vehicle;
 /**
  * Installation
  */
-public class Installation {
+public abstract class Installation {
 
-    //private int id;
+    // private int id;
     private String name;
     private String type;
     private Vehicle vehicle;
