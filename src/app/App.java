@@ -11,11 +11,11 @@ public class App {
         Installation installation = new Airport("Denver", "Aeropuerto");
         Installation installation2 = new Airport("Car", "Estacionamiento");
         
-        Location location = new Location(2);
+        Location location = new Location(2, "Mixco");
         location.addInstallation(installation);
         location.addInstallation(installation2);
 
-        Country country = new Country(2, "Guatemala");
+        Country country = new Country(1, "Guatemala");
         country.addLocations(location);
 
         System.out.println(country);

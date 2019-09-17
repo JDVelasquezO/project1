@@ -7,9 +7,9 @@ public class Country {
 
     // private String code;
     private String name;
-    private int counter;
+    private static int counter;
     private Location[] locations;
-    // private Location location;
+    //private Location location;
 
     public Country(int index, String name){
         setName(name);
