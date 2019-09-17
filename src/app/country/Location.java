@@ -43,7 +43,7 @@ public class Location {
 
     @Override
     public String toString() {
-        String str = "\tEn la instalacion " + name + ": \n";
+        String str = "\tEn la localidad " + name + ": \n";
 
         for (Object o : instalations) {
             str += o + "\n";
