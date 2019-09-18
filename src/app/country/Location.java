@@ -9,9 +9,10 @@ import app.installations.Installation;
 public class Location {
 
     private Installation instalations[];
-    private static int counter = 0;
+    private int counter = 0;
     private int code;
     private String name;
+    private Location location;
 
     public Location(int index, String name){
         setCode(code); setName(name);
@@ -30,6 +31,8 @@ public class Location {
 
     public void setName(String name) { this.name = name; }
     public String getName() { return name; }
+
+    public Location getLocation() { return location; }
 
     public void setInstalations(Installation[] instalations) {
         this.instalations = instalations;
