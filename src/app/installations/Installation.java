@@ -5,7 +5,7 @@ import app.vehicles.Vehicle;
 /**
  * Installation
  */
-public abstract class Installation {
+public class Installation {
 
     // private int id;
     private String name;
